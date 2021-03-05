@@ -6,7 +6,7 @@ A starter template for both Client & Power projects. This project contains:
 
   - [Typescript](https://www.typescriptlang.org/): A superset of Javascript that adds an additional layer of Typings, bringing more security and efficiency to the written code.
   - [Prettier](https://prettier.io/): Code formating that assures consistency across all Finsweet's projects.
-  - [ESLint](https://eslint.org/): Code linting that forces industries' best practises.
+  - [ESLint](https://eslint.org/): Code linting that enforces industries' best practises.
   - [ESBuild](https://esbuild.github.io/): Javascript bundler that compiles, bundles and minifies the original Typescript files.
 
 - Learning resources for new team members:
@@ -27,4 +27,4 @@ After that, open the new repository in your terminal and install the NPM package
 npm install
 ```
 
-If this is your first time using this template, check out the [`resources`](https://github.com/finsweet/developer-starter/tree/master/resources) folder and the boilerplate in the [`src/index.ts`](https://github.com/finsweet/developer-starter/blob/master/src/index.ts) file. Otherwise, feel free to remove them!
+If this is your first time using this template, check out the [Resources](https://github.com/finsweet/developer-starter/tree/master/resources) section on this `README` and the boilerplate in the [`src/index.ts`](https://github.com/finsweet/developer-starter/blob/master/src/index.ts) file. Otherwise, feel free to remove them!
