@@ -15,3 +15,7 @@ A starter template for both Client & Power projects. This project contains:
   - Coding best practises: Learn how to write clean and semantic code that is easily understandable by your teammates.
   - Development workflows: Learn how to use the development tools included in this repository and check examples of workflows from Local to Webflow.
   - Git: Learn how to collaborate with your teammates' code!
+
+## How to start
+
+The quickest way to start developing a new project is by [creating a new repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
