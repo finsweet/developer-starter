@@ -21,5 +21,6 @@ A starter template for both Client & Power projects. This project contains:
 
 The quickest way to start developing a new project is by [creating a new repository from this template](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
 
-After that, open the new repository in your terminal and install the NPM packages:
+After that, open the new repository in your terminal and install the NPM packages by running:
+
 `npm install`
