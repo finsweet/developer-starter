@@ -11,11 +11,11 @@ A starter template for both Client & Power projects. This project contains:
 
 - Learning resources for new team members:
 
-  - [Learning Typescript](https://github.com/finsweet/developer-starter/tree/master/resources/typescript): Everything you need to start confidently coding with Typescript.
-  - [Coding best practises](https://github.com/finsweet/developer-starter/tree/master/resources/best-practises): Learn how to write clean and semantic code that is easily understandable by your teammates.
-  - [Setting up your development environment](https://github.com/finsweet/developer-starter/tree/master/resources/dev-environment): Learn how to set up VSCode and to use the development tools included in this repository
-  - [Development workflows](https://github.com/finsweet/developer-starter/tree/master/resources/dev-workflows): See examples of workflows from your local environment to Webflow.
-  - [Git](https://github.com/finsweet/developer-starter/tree/master/resources/git): Learn how to collaborate with your teammates' code!
+  - [Learning Typescript](#typescript): Everything you need to start confidently coding with Typescript.
+  - [Coding best practises](#best-practises): Learn how to write clean and semantic code that is easily understandable by your teammates.
+  - [Setting up your development environment](#dev-environment): Learn how to set up VSCode and to use the development tools included in this repository
+  - [Development workflows](#dev-workflows): See examples of workflows from your local environment to Webflow.
+  - [Git](#git): Learn how to collaborate with your teammates' code!
 
 ## How to start
 
