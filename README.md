@@ -26,3 +26,5 @@ After that, open the new repository in your terminal and install the NPM package
 ```
 npm install
 ```
+
+If this is your first time using this template, check out the [`resources`](https://github.com/finsweet/developer-starter/tree/master/resources) folder and the boilerplate in the [`src/index.ts`](https://github.com/finsweet/developer-starter/blob/master/src/index.ts) file. Otherwise, feel free to remove them!
