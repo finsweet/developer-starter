@@ -2,18 +2,16 @@
 const { buildSync } = require('esbuild'); // eslint-disable-line
 
 // Default Settings
-const bundle = true;
-const minify = true;
-const sourcemap = false;
-const outdir = 'dist';
-const target = 'es6';
+const defaultSettings = {
+  bundle: true,
+  minify: true,
+  sourcemap: false,
+  outdir: 'dist',
+  target: 'es6',
+};
 
 // Files building
 buildSync({
+  ...defaultSettings,
   entryPoints: ['src/index.ts'],
-  outdir,
-  bundle,
-  minify,
-  sourcemap,
-  target,
 });
