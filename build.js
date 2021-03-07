@@ -1,15 +1,17 @@
+// Import ESBuild
+const { buildSync } = require('esbuild'); // eslint-disable-line
+
 // Default Settings
-const esbuild = require('esbuild'); // eslint-disable-line
 const bundle = true;
 const minify = true;
 const sourcemap = false;
+const outdir = 'dist';
 const target = 'es6';
-const dirPrefix = 'dist';
 
 // Files building
-esbuild.buildSync({
-  entryPoints: [`src/index.ts`],
-  outfile: `${dirPrefix}/index.js`,
+buildSync({
+  entryPoints: ['src/index.ts'],
+  outdir,
   bundle,
   minify,
   sourcemap,
