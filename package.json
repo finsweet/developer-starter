@@ -1,7 +1,7 @@
 {
-  "name": "developer-starter",
+  "name": "@finsweet/developer-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Developer starter template for Finsweet projects.",
   "main": "src/index.ts",
   "scripts": {
     "build": "node .\\build.js"
@@ -10,8 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/finsweet/developer-starter.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "webflow",
+    "finsweet",
+    "no-code"
+  ],
+  "author": {
+    "name": "Finsweet",
+    "url": "https://www.finsweet.com/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/finsweet/developer-starter/issues"
