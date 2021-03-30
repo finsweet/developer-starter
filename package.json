@@ -4,7 +4,7 @@
   "description": "Developer starter template for Finsweet projects.",
   "main": "src/index.ts",
   "scripts": {
-    "build": "node .\\build.js"
+    "build": "node .\\bin\\build.js"
   },
   "repository": {
     "type": "git",
