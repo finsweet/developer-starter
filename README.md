@@ -23,7 +23,7 @@ The quickest way to start developing a new project is by [creating a new reposit
 
 After that, open the new repository in your terminal and install the NPM packages by running:
 
-```
+```bash
 npm install
 ```
 
