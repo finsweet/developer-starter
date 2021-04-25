@@ -1,7 +1,7 @@
 // Import ESBuild
-const { buildSync, CommonOptions } = require('esbuild'); // eslint-disable-line
+const { buildSync, BuildOptions } = require('esbuild'); // eslint-disable-line
 
-/** @type {CommonOptions} */
+/** @type {BuildOptions} */
 const defaultSettings = {
   bundle: true,
   minify: true,
