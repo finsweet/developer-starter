@@ -6,7 +6,7 @@ A starter template for both Client & Power projects. This project contains:
 
   - [Typescript](https://www.typescriptlang.org/): A superset of Javascript that adds an additional layer of Typings, bringing more security and efficiency to the written code.
   - [Prettier](https://prettier.io/): Code formating that assures consistency across all Finsweet's projects.
-  - [ESLint](https://eslint.org/): Code linting that enforces industries' best practises.
+  - [ESLint](https://eslint.org/): Code linting that enforces industries' best practises. It uses [our own custom configuration](https://github.com/finsweet/eslint-config) to maintain consistency across all Finsweet's projects.
   - [ESBuild](https://esbuild.github.io/): Javascript bundler that compiles, bundles and minifies the original Typescript files.
 
 - Learning resources for new team members:

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Developer starter template for Finsweet projects.",
   "main": "src/index.ts",
+  "module": "src/index.ts",
+  "type": "module",
+  "sideEffects": false,
   "scripts": {
     "build": "node .\\bin\\build.js"
   },
