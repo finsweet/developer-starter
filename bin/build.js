@@ -1,7 +1,10 @@
 // Import ESBuild
-import esbuild, { buildSync } from 'esbuild'; // eslint-disable-line
+import esbuild from 'esbuild';
 
-/** @type {esbuild.BuildOptions} */
+/**
+ * Default Settings
+ * @type {esbuild.BuildOptions}
+ */
 const defaultSettings = {
   bundle: true,
   minify: true,
@@ -11,7 +14,7 @@ const defaultSettings = {
 };
 
 // Files building
-buildSync({
+esbuild.buildSync({
   ...defaultSettings,
   entryPoints: ['src/index.ts'],
 });
