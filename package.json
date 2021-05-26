@@ -5,7 +5,6 @@
   "main": "src/index.ts",
   "module": "src/index.ts",
   "type": "module",
-  "sideEffects": false,
   "scripts": {
     "build": "node ./bin/build.js"
   },
