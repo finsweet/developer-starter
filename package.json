@@ -27,14 +27,14 @@
   },
   "homepage": "https://github.com/finsweet/developer-starter#readme",
   "devDependencies": {
-    "@finsweet/eslint-config": "^1.0.8",
-    "@typescript-eslint/eslint-plugin": "^4.24.0",
-    "@typescript-eslint/parser": "^4.24.0",
-    "esbuild": "^0.12.1",
-    "eslint": "^7.26.0",
+    "@finsweet/eslint-config": "^1.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "esbuild": "^0.12.4",
+    "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "prettier": "^2.3.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.2"
   }
 }
