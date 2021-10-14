@@ -1,5 +1,10 @@
 // Import ESBuild
 import esbuild from 'esbuild';
+import dotenv from 'dotenv';
+
+dotenv.config({ path: '.env' });
+
+const production = process.env.NODE_ENV === 'production';
 
 /**
  * Default Settings
@@ -7,11 +12,13 @@ import esbuild from 'esbuild';
  */
 const defaultSettings = {
   bundle: true,
-  minify: true,
+  minify: production,
   sourcemap: false,
-  outdir: 'dist',
+  outdir: production ? 'dist' : process.env.CUSTOM_BUILD_DIRECTORY || '',
   target: 'es6',
 };
+
+console.log(defaultSettings);
 
 // Files building
 esbuild.buildSync({
