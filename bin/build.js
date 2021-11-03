@@ -15,10 +15,8 @@ const defaultSettings = {
   minify: production,
   sourcemap: false,
   outdir: production ? 'dist' : process.env.CUSTOM_BUILD_DIRECTORY || '',
-  target: 'es6',
+  target: production ? 'es6' : 'esnext',
 };
-
-console.log(defaultSettings);
 
 // Files building
 esbuild.buildSync({
