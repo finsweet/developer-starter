@@ -13,13 +13,14 @@ const production = process.env.NODE_ENV === 'production';
 const defaultSettings = {
   bundle: true,
   minify: production,
-  sourcemap: false,
+  sourcemap: !production,
+  watch: !production,
   outdir: production ? 'dist' : process.env.CUSTOM_BUILD_DIRECTORY || '',
   target: production ? 'es6' : 'esnext',
 };
 
 // Files building
-esbuild.buildSync({
+esbuild.build({
   ...defaultSettings,
   entryPoints: ['src/index.ts'],
 });
