@@ -1,21 +1,19 @@
 # Finsweet Developer Starter
 
-A starter template for both Client & Power projects. This project contains:
+A starter template for both Client & Power projects.
 
-- Preconfigured development tools:
+This project contains some preconfigured development tools:
 
-  - [Typescript](https://www.typescriptlang.org/): A superset of Javascript that adds an additional layer of Typings, bringing more security and efficiency to the written code.
-  - [Prettier](https://prettier.io/): Code formating that assures consistency across all Finsweet's projects.
-  - [ESLint](https://eslint.org/): Code linting that enforces industries' best practises. It uses [our own custom configuration](https://github.com/finsweet/eslint-config) to maintain consistency across all Finsweet's projects.
-  - [ESBuild](https://esbuild.github.io/): Javascript bundler that compiles, bundles and minifies the original Typescript files.
+- [Typescript](https://www.typescriptlang.org/): A superset of Javascript that adds an additional layer of Typings, bringing more security and efficiency to the written code.
+- [Prettier](https://prettier.io/): Code formating that assures consistency across all Finsweet's projects.
+- [ESLint](https://eslint.org/): Code linting that enforces industries' best practises. It uses [our own custom configuration](https://github.com/finsweet/eslint-config) to maintain consistency across all Finsweet's projects.
+- [ESBuild](https://esbuild.github.io/): Javascript bundler that compiles, bundles and minifies the original Typescript files.
 
-- Learning resources for new team members:
+Resources (work in progress):
 
-  - [Learning Typescript](#typescript): Everything you need to start confidently coding with Typescript.
-  - [Coding best practises](#best-practises): Learn how to write clean and semantic code that is easily understandable by your teammates.
-  - [Setting up your development environment](#dev-environment): Learn how to set up VSCode and to use the development tools included in this repository
-  - [Development workflows](#dev-workflows): See examples of workflows from your local environment to Webflow.
-  - [Git](#git): Learn how to collaborate with your teammates' code!
+- [How to start](#how-to-start)
+- [Setting up a custom build directory](#setting-up-a-custom-build-directory)
+- [Setting up a path alias](#setting-up-a-path-alias)
 
 ## How to start
 
@@ -37,3 +35,27 @@ To build the files, you have two defined scripts:
 By default, the output of the build files is set to the `dist` folder (check `bin/build.js`), but you can define a custom output directory for development purposes.
 
 To do so, create a `.env` file that contains a `CUSTOM_BUILD_DIRECTORY` key. You can check `.env.example` for an example.
+
+## Setting up a path alias
+
+Path aliases are very helpful to avoid code like:
+
+```typescript
+import example from '../../../../utils/example';
+```
+
+Instead, we can create path aliases that map to a specific folder, so the code becomes cleaner like:
+
+```typescript
+import example from '$utils/example';
+```
+
+You can set up path aliases using the `paths` setting in `tsconfig.json`. This template has an already predefined path as an example:
+
+```json
+{
+  "paths": {
+    "$utils/*": ["src/utils/*"]
+  }
+}
+```
