@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/utils/log.ts", "../src/index.ts"],
+  "sourcesContent": ["/**\r\n * This JSDoc comment is used to describe the purpose of the function: Prints some welcome messages on the console.\r\n * @param name - This is a description of the function parameter: The name that will be printed on the console.\r\n */\r\nexport const helloStarter = (name: string) => {\r\n  console.log(`Hello ${name}!`);\r\n\r\n  /*! This comment will be untouched when compiling */\r\n  console.log(\r\n    'Is this a short code snippet? Try compiling this file with Typescript by running the \"tsc\" command on your terminal.'\r\n  );\r\n\r\n  // This comment will be removed when compiling\r\n  console.log(\r\n    'Is this a big project? Try bundling and minifying the files with ESBuild by adding them in the \"build.js\" config file and running the \"npm run build\" command on your terminal.'\r\n  );\r\n};\r\n", "import { helloStarter } from '$utils/log';\r\n\r\n// Starter example. Check the comments!\r\ndocument.addEventListener('DOMContentLoaded', () => {\r\n  const name = 'John Doe';\r\n  helloStarter(name);\r\n});\r\n"],
+  "mappings": ";;AAIO,MAAM,eAAe,CAAC,SAAiB;AAC5C,YAAQ,IAAI,SAAS;AAErB,AACA,YAAQ,IACN;AAIF,YAAQ,IACN;AAAA;;;ACXJ,WAAS,iBAAiB,oBAAoB,MAAM;AAClD,UAAM,OAAO;AACb,iBAAa;AAAA;",
+  "names": []
+}

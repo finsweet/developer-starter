@@ -28,13 +28,18 @@ npm install
 To build the files, you have two defined scripts:
 
 - `npm run build`: Will build to the production directory (`dist`).
-- `npm run dev`: Will build to your custom directory, if defined (check [Setting up a custom build directory](#setting-up-a-custom-build-directory) for more info).
+- `npm run dev`: Will build and create a local server that serves all files (check [Serving files on development mode](#serving-files-on-development-mode) for more info).
 
-## Setting up a custom build directory
+## Serving files on development mode
 
-By default, the output of the build files is set to the `dist` folder (check `bin/build.js`), but you can define a custom output directory for development purposes.
+When you run `npm run dev`, two things happen:
 
-To do so, create a `.env` file that contains a `CUSTOM_BUILD_DIRECTORY` key. You can check `.env.example` for an example.
+- ESBuild is set to `watch` mode. Every time that you save your files, the project will be rebuilt.
+- A local server is created under `http://localhost:3000` that serves all your project files. You can import them in your Webflow projects like:
+
+```html
+<script src="http://localhost:3000/dist/index.js"></script>
+```
 
 ## Setting up a path alias
 
