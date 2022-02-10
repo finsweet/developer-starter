@@ -31,6 +31,6 @@ esbuild.build({
 
 // Files serving
 if (!production) {
-  const server = http.createServer((req, res) => handler(req, res));
+  const server = http.createServer(handler);
   server.listen(3000, () => console.log('Serving at http://localhost:3000'));
 }
