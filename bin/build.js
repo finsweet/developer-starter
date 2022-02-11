@@ -1,9 +1,11 @@
 /* eslint-disable no-console */
 import esbuild from 'esbuild';
-import http from 'http';
-import handler from 'serve-handler';
 
+const buildDirectory = 'dist';
 const production = process.env.NODE_ENV === 'production';
+
+// Config entrypoint files
+const entryPoints = ['src/index.ts'];
 
 /**
  * Default Settings
@@ -11,26 +13,33 @@ const production = process.env.NODE_ENV === 'production';
  */
 const defaultSettings = {
   bundle: true,
-  outdir: 'dist',
+  outdir: buildDirectory,
   minify: production,
   sourcemap: !production,
   target: production ? 'es6' : 'esnext',
-  watch: !production && {
-    onRebuild(error, result) {
-      if (error) console.error('Build fail:', error);
-      else console.log('Build success:', result);
-    },
-  },
 };
 
 // Files building
-esbuild.build({
-  ...defaultSettings,
-  entryPoints: ['src/index.ts'],
-});
+if (production)
+  esbuild.build({
+    ...defaultSettings,
+    entryPoints: entryPoints,
+  });
 
 // Files serving
 if (!production) {
-  const server = http.createServer(handler);
-  server.listen(3000, () => console.log('Serving at http://localhost:3000'));
+  esbuild
+    .serve(
+      {
+        servedir: buildDirectory,
+        port: 3000,
+      },
+      {
+        ...defaultSettings,
+        entryPoints,
+      }
+    )
+    .then((server) => {
+      console.log(`Serving at http://localhost:${server.port}`);
+    });
 }
