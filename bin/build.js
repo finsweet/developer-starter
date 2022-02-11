@@ -35,7 +35,7 @@ if (!production) {
       },
       {
         ...defaultSettings,
-        entryPoints: entryPoints,
+        entryPoints,
       }
     )
     .then((server) => {
