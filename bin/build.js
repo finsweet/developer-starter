@@ -20,10 +20,11 @@ const defaultSettings = {
 };
 
 // Files building
-esbuild.build({
-  ...defaultSettings,
-  entryPoints: entryPoints,
-});
+if (production)
+  esbuild.build({
+    ...defaultSettings,
+    entryPoints: entryPoints,
+  });
 
 // Files serving
 if (!production) {
