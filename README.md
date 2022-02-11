@@ -38,7 +38,7 @@ When you run `npm run dev`, two things happen:
 - A local server is created under `http://localhost:3000` that serves all your project files. You can import them in your Webflow projects like:
 
 ```html
-<script src="http://localhost:3000/dist/index.js"></script>
+<script src="http://localhost:3000/index.js"></script>
 ```
 
 ## Setting up a path alias
