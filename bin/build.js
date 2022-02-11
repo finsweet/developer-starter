@@ -31,7 +31,6 @@ else {
     .serve(
       {
         servedir: buildDirectory,
-        port: 3000,
       },
       defaultSettings
     )
