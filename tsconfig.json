@@ -12,7 +12,7 @@
     "strict": true /* Enable all strict type-checking options. */,
 
     /* Additional Checks */
-    "noUncheckedIndexedAccess": true /* Include 'undefined' in index signature results */,
+    "importsNotUsedAsValues": "error",
 
     /* Module Resolution Options */
     "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
