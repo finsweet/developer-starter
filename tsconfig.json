@@ -15,6 +15,7 @@
     "importsNotUsedAsValues": "error",
 
     /* Module Resolution Options */
+    "moduleResolution": "node",
     "baseUrl": "./" /* Base directory to resolve non-absolute module names. */,
     "paths": {
       "$utils/*": ["src/utils/*"]
