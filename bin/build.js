@@ -16,7 +16,7 @@ const defaultSettings = {
   outdir: buildDirectory,
   minify: production,
   sourcemap: !production,
-  target: production ? 'es6' : 'esnext',
+  target: production ? 'es2017' : 'esnext',
   entryPoints,
 };
 
