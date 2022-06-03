@@ -1,0 +1,12 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  release:
+    uses: finsweet/workflow-release/.github/workflows/release.yml@main
+    secrets: inherit
