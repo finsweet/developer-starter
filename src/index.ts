@@ -1,7 +1,7 @@
-import { helloStarter } from '$utils/log';
+import { greetUser } from '$utils/greet';
 
-// Starter example. Check the comments!
-document.addEventListener('DOMContentLoaded', () => {
+window.Webflow ||= [];
+window.Webflow.push(() => {
   const name = 'John Doe';
-  helloStarter(name);
+  greetUser(name);
 });
