@@ -37,7 +37,7 @@
     "@changesets/changelog-git": "^0.1.11",
     "@changesets/cli": "^2.22.0",
     "@finsweet/eslint-config": "^1.1.5",
-    "@finsweet/tsconfig": "^1.0.1",
+    "@finsweet/tsconfig": "^1.0.2",
     "@playwright/test": "^1.22.2",
     "@trivago/prettier-plugin-sort-imports": "^3.2.0",
     "@typescript-eslint/eslint-plugin": "^5.27.1",

@@ -5,7 +5,7 @@ specifiers:
   '@changesets/cli': ^2.22.0
   '@finsweet/eslint-config': ^1.1.5
   '@finsweet/ts-utils': ^0.33.1
-  '@finsweet/tsconfig': ^1.0.1
+  '@finsweet/tsconfig': ^1.0.2
   '@playwright/test': ^1.22.2
   '@trivago/prettier-plugin-sort-imports': ^3.2.0
   '@typescript-eslint/eslint-plugin': ^5.27.1
@@ -25,7 +25,7 @@ devDependencies:
   '@changesets/changelog-git': 0.1.11
   '@changesets/cli': 2.22.0
   '@finsweet/eslint-config': 1.1.5_ihlvk6ewvsbtzxcwt4ccvruawa
-  '@finsweet/tsconfig': 1.0.1
+  '@finsweet/tsconfig': 1.0.2
   '@playwright/test': 1.22.2
   '@trivago/prettier-plugin-sort-imports': 3.2.0_prettier@2.6.2
   '@typescript-eslint/eslint-plugin': 5.27.1_aq7uryhocdbvbqum33pitcm3y4
@@ -498,8 +498,8 @@ packages:
     resolution: {integrity: sha512-7kT8wc1+eK/MxLyFBenl4SMHYRsmAqlOKDlUoRciWZWtjb4mXoN1co9Bohgi1ZOpgME2j+hC7cRDdBuKQUQu3w==}
     dev: false
 
-  /@finsweet/tsconfig/1.0.1:
-    resolution: {integrity: sha512-SKOr2Dw7DYzSkoW1C5h4C2pwZHiUpaxurl9s2VkMHsHsvvLMLet1mU8EEej8HTP1SRzKZftyYbg1FcQaXn/v6Q==}
+  /@finsweet/tsconfig/1.0.2:
+    resolution: {integrity: sha512-pUlawfmBjK7BRWKgtlijfafb/ombG0szIAc+8cnITivLquDosCJXhA8DN4oYaWYUV0Qv9eTiMhPgPMjJCnDG+w==}
     dev: true
 
   /@humanwhocodes/config-array/0.9.5:
