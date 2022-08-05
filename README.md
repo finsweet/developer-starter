@@ -12,6 +12,7 @@ Before starting to work with this template, please take some time to read throug
   - [Installing](#installing)
   - [Building](#building)
     - [Serving files on development mode](#serving-files-on-development-mode)
+    - [Building multiple files](#building-multiple-files)
     - [Setting up a path alias](#setting-up-a-path-alias)
 - [Contributing guide](#contributing-guide)
 - [Pre-defined scripts](#pre-defined-scripts)
@@ -86,6 +87,23 @@ When you run `pnpm dev`, two things happen:
 ```html
 <script defer src="http://localhost:3000/{FILE_PATH}.js"></script>
 ```
+
+### Building multiple files
+
+If you need to build multiple files into different outputs, you can do it by updating the build settings.
+
+In `bind/build.js`, update the `entryPoints` with any files you'd like to build:
+
+```javascript
+const entryPoints = [
+  'src/home/index.ts',
+  'src/contact/whatever.ts',
+  'src/hooyah.ts',
+  'src/home/other.ts',
+];
+```
+
+This will tell `esbuild` to build all those files and output them in the `dist` folder for production and in `http://localhost:3000` for development.
 
 ### Setting up a path alias
 
