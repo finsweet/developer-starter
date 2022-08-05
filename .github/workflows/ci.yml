@@ -8,5 +8,5 @@ jobs:
     uses: finsweet/workflow-ci-lint/.github/workflows/lint.yml@main
 
   # Comment this job out if your project doesn't have any tests.
-  Tests:
-    uses: finsweet/workflow-ci-test/.github/workflows/test.yml@main
+  # Tests:
+  #   uses: finsweet/workflow-ci-test/.github/workflows/test.yml@main
