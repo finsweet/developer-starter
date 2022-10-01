@@ -40,6 +40,7 @@
     "@finsweet/tsconfig": "^1.1.0",
     "@playwright/test": "^1.25.0",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
+    "@types/jquery": "^3.5.14",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
     "@typescript-eslint/parser": "^5.33.0",
     "cross-env": "^7.0.3",
@@ -51,6 +52,7 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.33.1"
+    "@finsweet/ts-utils": "^0.33.1",
+    "jquery": "^3.6.1"
   }
 }

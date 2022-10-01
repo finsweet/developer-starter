@@ -18,6 +18,7 @@ const defaultSettings = {
   sourcemap: !production,
   target: production ? 'es2017' : 'esnext',
   entryPoints,
+  external: ['jquery'],
 };
 
 // Files building
