@@ -52,7 +52,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.33.1",
-    "jquery": "^3.6.1"
+    "@finsweet/ts-utils": "^0.33.1"
   }
 }
