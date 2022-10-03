@@ -31,27 +31,27 @@
     "test": "pnpm playwright test",
     "test:headed": "pnpm playwright test --headed",
     "release": "changeset publish",
-    "update": "pnpm update -i -L"
+    "update": "pnpm update -i -L -r"
   },
   "devDependencies": {
-    "@changesets/changelog-git": "^0.1.12",
-    "@changesets/cli": "^2.24.2",
+    "@changesets/changelog-git": "^0.1.13",
+    "@changesets/cli": "^2.25.0",
     "@finsweet/eslint-config": "^1.1.5",
     "@finsweet/tsconfig": "^1.1.0",
-    "@playwright/test": "^1.25.0",
+    "@playwright/test": "^1.26.1",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
     "@types/jquery": "^3.5.14",
-    "@typescript-eslint/eslint-plugin": "^5.33.0",
-    "@typescript-eslint/parser": "^5.33.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.15.1",
-    "eslint": "^8.21.0",
+    "esbuild": "^0.15.10",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.4"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.33.1"
+    "@finsweet/ts-utils": "^0.33.2"
   }
 }
