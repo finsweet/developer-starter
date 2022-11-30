@@ -1,6 +1,11 @@
 # Finsweet Developer Starter
 
-A starter template for both Client & Power projects.
+#### NEW! We now have  CLI :tada::tada::tada::tada::tada::tada: 
+Read more about our NEW CLI [here](https://github.com/finsweet/create-starter). You can use our CLI to quickly setup a developer starter and more. :raised_hands::raised_hands:
+
+<br/>
+
+The Finsweet Developer Starter is a template for both Client & Power projects.
 
 Before starting to work with this template, please take some time to read through the documentation.
 
