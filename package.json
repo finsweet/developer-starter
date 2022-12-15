@@ -36,22 +36,21 @@
   "devDependencies": {
     "@changesets/changelog-git": "^0.1.13",
     "@changesets/cli": "^2.25.2",
-    "@finsweet/eslint-config": "^1.1.5",
-    "@finsweet/tsconfig": "^1.1.0",
+    "@finsweet/eslint-config": "^2.0.0",
+    "@finsweet/tsconfig": "^1.2.0",
     "@playwright/test": "^1.28.1",
-    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "@types/jquery": "^3.5.14",
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
-    "@typescript-eslint/parser": "^5.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.15.16",
-    "eslint": "^8.28.0",
+    "esbuild": "^0.16.7",
+    "eslint": "^8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.0",
-    "typescript": "^4.9.3"
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.37.1"
+    "@finsweet/ts-utils": "^0.37.2"
   }
 }
