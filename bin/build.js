@@ -40,7 +40,14 @@ else {
       servedir: BUILD_DIRECTORY,
       port: SERVE_PORT,
     })
-    .then(({ port }) => {
-      console.log(`Serving at http://localhost:${port}`);
+    .then(async ({ port }) => {
+      // Log all served files for easy reference
+      const origin = `http://localhost:${port}`;
+      const files = ENTRY_POINTS.map(
+        (path) => `${origin}/${path.replace('src/', '').replace('.ts', '.js')}`
+      );
+
+      console.log('Serving at:', origin);
+      console.log('Built files:', files);
     });
 }
