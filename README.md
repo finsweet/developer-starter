@@ -165,6 +165,7 @@ This template contains a set of predefined scripts in the `package.json` file:
 - `pnpm dev`: Builds and creates a local server that serves all files (check [Serving files on development mode](#serving-files-on-development-mode) for more info).
 - `pnpm build`: Builds to the production directory (`dist`).
 - `pnpm lint`: Scans the codebase with ESLint and Prettier to see if there are any errors.
+- `pnpm lint:fix`: Fixes all auto-fixable issues in ESLint.
 - `pnpm check`: Checks for TypeScript errors in the codebase.
 - `pnpm format`: Formats all the files in the codebase using Prettier. You probably won't need this script if you have automatic [formatting on save](https://www.digitalocean.com/community/tutorials/code-formatting-with-prettier-in-visual-studio-code#automatically-format-on-save) active in your editor.
 - `pnpm test`: Will run all the tests that are located in the `/tests` folder.
