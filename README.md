@@ -88,11 +88,13 @@ When you run `pnpm dev`, two things happen:
 <script defer src="http://localhost:3000/{FILE_PATH}.js"></script>
 ```
 
+- Live Reloading is enabled by default, meaning that every time you save a change in your files, the website you're working on will reload automatically. You can disable it in `/bin/build.js`.
+
 ### Building multiple files
 
 If you need to build multiple files into different outputs, you can do it by updating the build settings.
 
-In `bind/build.js`, update the `entryPoints` with any files you'd like to build:
+In `bin/build.js`, update the `ENTRY_POINTS` array with any files you'd like to build:
 
 ```javascript
 const entryPoints = [

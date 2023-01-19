@@ -14,8 +14,8 @@ const SERVE_PORT = 3000;
 
 // Create context
 const context = await esbuild.context({
-  entryPoints: ENTRY_POINTS,
   bundle: true,
+  entryPoints: ENTRY_POINTS,
   outdir: BUILD_DIRECTORY,
   minify: PRODUCTION,
   sourcemap: !PRODUCTION,
