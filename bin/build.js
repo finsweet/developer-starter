@@ -6,7 +6,7 @@ const BUILD_DIRECTORY = 'dist';
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 // Config entrypoint files
-const ENTRY_POINTS = ['src/index.ts'];
+const ENTRY_POINTS = ['src/index.ts', 'src/index.ts'];
 
 // Config dev serving
 const LIVE_RELOAD = !PRODUCTION;
@@ -48,6 +48,15 @@ else {
       );
 
       console.log('Serving at:', origin);
-      console.log('Built files:', files);
+      // Outputs a Markdown table of served files + their full script tag
+      console.log(
+        `| Built file | Script path |\n|${'-'.repeat(9)}|${'-'.repeat(13)}|\n` +
+          files
+            .map(
+              (file) =>
+                `| ${file.replace(`${origin}/`, '')} | <script defer src="${file}"></script> |\n`
+            )
+            .join('')
+      );
     });
 }
