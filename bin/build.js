@@ -42,21 +42,18 @@ else {
     })
     .then(async ({ port }) => {
       // Log all served files for easy reference
-      const origin = `http://localhost:${port}`;
-      const files = ENTRY_POINTS.map(
-        (path) => `${origin}/${path.replace('src/', '').replace('.ts', '.js')}`
-      );
+      console.table(
+        ENTRY_POINTS.map((path) => {
+          const file = path.replace('src/', '').replace('.ts', '.js');
+          const location = `http://localhost:${port}/${file}`;
+          const script = `<script defer src="${location}"></script>`;
 
-      console.log('Serving at:', origin);
-      // Outputs a Markdown table of served files + their full script tag
-      console.log(
-        `| Built file | Script path |\n|${'-'.repeat(9)}|${'-'.repeat(13)}|\n` +
-          files
-            .map(
-              (file) =>
-                `| ${file.replace(`${origin}/`, '')} | <script defer src="${file}"></script> |\n`
-            )
-            .join('')
+          return {
+            'Built File': file,
+            'File Location': location,
+            'Script Suggestion': script,
+          };
+        })
       );
     });
 }
