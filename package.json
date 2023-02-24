@@ -1,13 +1,13 @@
 {
   "name": "@finsweet/developer-starter",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Developer starter template for Finsweet projects.",
   "homepage": "https://github.com/finsweet/developer-starter#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
     "name": "Finsweet",
-    "url": "https://www.finsweet.com/"
+    "url": "https://finsweet.com/"
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "lint:fix": "eslint --ignore-path .gitignore ./src --fix",
     "check": "tsc --noEmit",
     "format": "prettier --write ./src",
-    "test": "pnpm playwright test",
-    "test:headed": "pnpm playwright test --headed",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
     "release": "changeset publish",
     "update": "pnpm update -i -L -r"
   },
@@ -39,12 +39,12 @@
     "@changesets/cli": "^2.26.0",
     "@finsweet/eslint-config": "^2.0.2",
     "@finsweet/tsconfig": "^1.2.0",
-    "@playwright/test": "^1.30.0",
-    "@typescript-eslint/eslint-plugin": "^5.51.0",
-    "@typescript-eslint/parser": "^5.51.0",
+    "@playwright/test": "^1.31.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.17.7",
-    "eslint": "^8.33.0",
+    "esbuild": "^0.17.10",
+    "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
@@ -52,6 +52,6 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.37.3"
+    "@finsweet/ts-utils": "^0.38.0"
   }
 }
