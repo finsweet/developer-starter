@@ -107,6 +107,22 @@ const entryPoints = [
 
 This will tell `esbuild` to build all those files and output them in the `dist` folder for production and in `http://localhost:3000` for development.
 
+### Building CSS files
+
+CSS files are also supported by the bundler. When including a CSS file as an entry point, the compiler will generate a minified version in your output folder.
+
+You can define a CSS entry point by either:
+
+- Manually defining it in the `bin/build.js` config. [See previous section](#building-multiple-files) for reference.
+- Or importing the file inside any of your JavaScript / TypeScript files:
+
+```typescript
+// src/index.ts
+import './index.css';
+```
+
+CSS outputs are also available in `localhost` during [development mode](#serving-files-on-development-mode).
+
 ### Setting up a path alias
 
 Path aliases are very helpful to avoid code like:
