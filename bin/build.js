@@ -1,5 +1,7 @@
 /* eslint-disable no-console */
 import * as esbuild from 'esbuild';
+import { readdirSync } from 'fs';
+import { join } from 'path';
 
 // Config output
 const BUILD_DIRECTORY = 'dist';
@@ -41,19 +43,27 @@ else {
       port: SERVE_PORT,
     })
     .then(async ({ port }) => {
+      const buildDirectory = join(process.cwd(), BUILD_DIRECTORY);
+      const files = readdirSync(buildDirectory);
+
       // Log all served files for easy reference
       console.table(
-        ENTRY_POINTS.map((path) => {
-          const file = path.replace('src/', '').replace('.ts', '.js');
-          const location = `http://localhost:${port}/${file}`;
-          const script = `<script defer src="${location}"></script>`;
+        files
+          .map((file) => {
+            if (file.endsWith('map')) return;
 
-          return {
-            'Built File': file,
-            'File Location': location,
-            'Script Suggestion': script,
-          };
-        })
+            const location = `http://localhost:${port}/${file}`;
+            const tag = file.endsWith('css')
+              ? `<link href="${location}" rel="stylesheet" type="text/css"/>`
+              : `<script defer src="${location}"></script>`;
+
+            return {
+              'Built File': file,
+              'File Location': location,
+              'Import Suggestion': tag,
+            };
+          })
+          .filter(Boolean)
       );
     });
 }
