@@ -230,10 +230,12 @@ See [how to automatically deploy updates to npm](#how-to-automatically-deploy-up
 
 Some repositories may not have the required permissions to let Changesets interact with the repository.
 
-To enable full compatibility with Changesets, go to the repository's `Settings/Actions/General/Workflow permissions` and define:
+To enable full compatibility with Changesets, go to the repository settings (`Settings > Actions > General > Workflow Permissions`) and define:
 
 - ✅ Read and write permissions.
 - ✅ Allow GitHub Actions to create and approve pull requests.
+
+Enabling this setting for your organization account (`Account Settings > Actions > General`) could help streamline the process. By doing so, any new repos created under the org will automatically inherit the setting, which can save your teammates time and effort. This can only be applied to organization accounts at the time.
 
 #### How to automatically deploy updates to npm
 
