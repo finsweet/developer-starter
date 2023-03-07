@@ -210,6 +210,8 @@ If any of these jobs fail, you will get a warning in your Pull Request and shoul
 
 [Changesets](https://github.com/changesets/changesets) allows us to generate automatic changelog updates when merging a Pull Request to the `master` branch.
 
+Before starting, make sure to [enable full compatibility with Changesets in the repository](#how-to-enable-continuous-deployment-with-changesets).
+
 To generate a new changelog, run:
 
 ```bash
@@ -222,7 +224,16 @@ Once the Pull Request is merged into `master`, a new Pull Request will automatic
 You'll have to manually merge this new PR to complete the workflow.
 
 If an `NPM_TOKEN` secret is included in the repository secrets, Changesets will automatically deploy the new package version to npm.
-Keep reading for more info about this.
+See [how to automatically deploy updates to npm](#how-to-automatically-deploy-updates-to-npm) for more info.
+
+#### How to enable Continuous Deployment with Changesets
+
+Some repositories may not have the required permissions to let Changesets interact with the repository.
+
+To enable full compatibility with Changesets, go to the repository's `Settings/Actions/General/Workflow permissions` and define:
+
+- ✅ Read and write permissions.
+- ✅ Allow GitHub Actions to create and approve pull requests.
 
 #### How to automatically deploy updates to npm
 
