@@ -97,7 +97,7 @@ If you need to build multiple files into different outputs, you can do it by upd
 In `bin/build.js`, update the `ENTRY_POINTS` array with any files you'd like to build:
 
 ```javascript
-const entryPoints = [
+const ENTRY_POINTS = [
   'src/home/index.ts',
   'src/contact/whatever.ts',
   'src/hooyah.ts',
