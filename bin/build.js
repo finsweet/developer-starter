@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import * as esbuild from 'esbuild';
 import { readdirSync } from 'fs';
 import { join, sep } from 'path';
@@ -13,6 +12,7 @@ const ENTRY_POINTS = ['src/index.ts'];
 // Config dev serving
 const LIVE_RELOAD = !PRODUCTION;
 const SERVE_PORT = 3000;
+const SERVE_ORIGIN = `http://localhost:${SERVE_PORT}`;
 
 // Create context
 const context = await esbuild.context({
@@ -24,7 +24,7 @@ const context = await esbuild.context({
   target: PRODUCTION ? 'es2019' : 'esnext',
   inject: LIVE_RELOAD ? ['./bin/live-reload.js'] : undefined,
   define: {
-    SERVE_PORT: `${SERVE_PORT}`,
+    SERVE_ORIGIN: JSON.stringify(SERVE_ORIGIN),
   },
 });
 
@@ -42,17 +42,13 @@ else {
       servedir: BUILD_DIRECTORY,
       port: SERVE_PORT,
     })
-    .then(({ port }) => {
-      logServedFiles(BUILD_DIRECTORY, port);
-    });
+    .then(logServedFiles);
 }
 
 /**
  * Logs information about the files that are being served during local development.
- * @param {string} servedir
- * @param {number} port
  */
-function logServedFiles(servedir, port) {
+function logServedFiles() {
   /**
    * Recursively gets all files in a directory.
    * @param {string} dirPath
@@ -67,7 +63,7 @@ function logServedFiles(servedir, port) {
     return files.flat();
   };
 
-  const files = getFiles(servedir);
+  const files = getFiles(BUILD_DIRECTORY);
 
   const filesInfo = files
     .map((file) => {
@@ -75,7 +71,7 @@ function logServedFiles(servedir, port) {
 
       // Normalize path and create file location
       const paths = file.split(sep);
-      paths[0] = `http://localhost:${port}`;
+      paths[0] = SERVE_ORIGIN;
 
       const location = paths.join('/');
 
@@ -91,5 +87,6 @@ function logServedFiles(servedir, port) {
     })
     .filter(Boolean);
 
+  // eslint-disable-next-line no-console
   console.table(filesInfo);
 }

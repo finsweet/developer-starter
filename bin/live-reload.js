@@ -1,3 +1,1 @@
-new EventSource(`http://localhost:${SERVE_PORT}/esbuild`).addEventListener('change', () =>
-  location.reload()
-);
+new EventSource(`${SERVE_ORIGIN}/esbuild`).addEventListener('change', () => location.reload());
