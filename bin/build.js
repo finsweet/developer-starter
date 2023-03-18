@@ -36,7 +36,6 @@ if (PRODUCTION) {
 
 // Watch and serve files in dev
 else {
-  await context.rebuild();
   await context.watch();
   await context
     .serve({
