@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@changesets/changelog-git': ^0.1.14
   '@changesets/cli': ^2.26.0
-  '@finsweet/eslint-config': ^2.0.2
+  '@finsweet/eslint-config': ^2.0.3
   '@finsweet/ts-utils': ^0.39.0
   '@finsweet/tsconfig': ^1.2.0
   '@playwright/test': ^1.31.2
@@ -24,7 +24,7 @@ dependencies:
 devDependencies:
   '@changesets/changelog-git': 0.1.14
   '@changesets/cli': 2.26.0
-  '@finsweet/eslint-config': 2.0.2_qjc7w4lintnutswbpbrxy6eyou
+  '@finsweet/eslint-config': 2.0.3_qjc7w4lintnutswbpbrxy6eyou
   '@finsweet/tsconfig': 1.2.0
   '@playwright/test': 1.31.2
   '@typescript-eslint/eslint-plugin': 5.55.0_342y7v4tc7ytrrysmit6jo4wri
@@ -487,8 +487,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@finsweet/eslint-config/2.0.2_qjc7w4lintnutswbpbrxy6eyou:
-    resolution: {integrity: sha512-SsVB8AF8nDbIeSjYxqTJM+yQJeCOzRv9E/ij1kyBo+/BypCHkwPuOC+gRPK0mNNFhdwDmCHLDdxjSaUO2LhluQ==}
+  /@finsweet/eslint-config/2.0.3_qjc7w4lintnutswbpbrxy6eyou:
+    resolution: {integrity: sha512-QSJWJ1CnmE+cMsg8kZVWl9vlxuDReyJFjLVdMlVo3kmCciyH6lVrmXFmhHbj79F+ds+0rL5ZI6RLHctQzekjiQ==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.51.0
       '@typescript-eslint/parser': ^5.51.0
