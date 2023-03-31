@@ -5,7 +5,7 @@ specifiers:
   '@changesets/cli': ^2.26.1
   '@finsweet/eslint-config': ^2.0.4
   '@finsweet/ts-utils': ^0.39.1
-  '@finsweet/tsconfig': ^1.3.0
+  '@finsweet/tsconfig': ^1.3.1
   '@playwright/test': ^1.32.1
   '@typescript-eslint/eslint-plugin': ^5.57.0
   '@typescript-eslint/parser': ^5.57.0
@@ -25,7 +25,7 @@ devDependencies:
   '@changesets/changelog-git': 0.1.14
   '@changesets/cli': 2.26.1
   '@finsweet/eslint-config': 2.0.4_n7michueohczffwy5qonjoh22u
-  '@finsweet/tsconfig': 1.3.0_typescript@5.0.3
+  '@finsweet/tsconfig': 1.3.1_typescript@5.0.3
   '@playwright/test': 1.32.1
   '@typescript-eslint/eslint-plugin': 5.57.0_z24sz2fazj3bxoipp6m4s7b2mi
   '@typescript-eslint/parser': 5.57.0_vwh6htx42aidho2qgfca5u5rwm
@@ -513,8 +513,8 @@ packages:
     resolution: {integrity: sha512-kgq1Ti0suRLwRv97Ag7H+rZgm3FyCPcER3Ho2utRhCL8bBmLGWg7sPaREeb+DElQ2wChu+jDXARCDSQV3rNA1A==}
     dev: false
 
-  /@finsweet/tsconfig/1.3.0_typescript@5.0.3:
-    resolution: {integrity: sha512-2Ui2F1PrvyrioSLnC79wbLWBwL/g78ev2eMSR90VVTIIABrpLDls7f20LWhxDhi/31+cEga8M0/DIY1zOa9JPg==}
+  /@finsweet/tsconfig/1.3.1_typescript@5.0.3:
+    resolution: {integrity: sha512-ojYa0AbzjCdrfgIejsDlxoqcWIDwlSAYmTsLzHMjfDibA9qACpmwgW1IcW3Dk52UYxLEkMUiab7XoNBeO/+S2g==}
     peerDependencies:
       typescript: ^5.0.2
     dependencies:
