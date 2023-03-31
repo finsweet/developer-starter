@@ -16,9 +16,6 @@
   "bugs": {
     "url": "https://github.com/finsweet/developer-starter/issues"
   },
-  "engines": {
-    "pnpm": "^7.0.0"
-  },
   "type": "module",
   "main": "src/index.ts",
   "module": "src/index.ts",
