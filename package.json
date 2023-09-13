@@ -1,20 +1,24 @@
 {
-  "name": "IBL Test - Mohamed Azzam",
+  "name": "IBL Test -- Mohamed Azzam",
   "version": "0.0.0",
-  "description": "A simple Ai chat in Webflow",
-  "homepage": "https://github.com/itsazzam/IBL-Chatbot.git",
+  "description": "",
+  "homepage": "https://github.com/finsweet/developer-starter#readme",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Mohamed Azzam"
+    "name": "mohamed azzam",
+    "url": "https://www.linkedin.com/in/mo-azzam/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itsazzam/IBL-Chatbot.git"
+    "url": "git+https://github.com/finsweet/developer-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/finsweet/developer-starter/issues"
   },
   "type": "module",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
   "files": [
     "dist"
   ],
