@@ -1,24 +1,20 @@
 {
-  "name": "@finsweet/developer-starter",
+  "name": "IBL Test - Mohamed Azzam",
   "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "description": "A simple Ai chat in Webflow",
+  "homepage": "https://github.com/itsazzam/IBL-Chatbot.git",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
+    "name": "Mohamed Azzam"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/finsweet/developer-starter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/finsweet/developer-starter/issues"
+    "url": "git+https://github.com/itsazzam/IBL-Chatbot.git"
   },
   "type": "module",
-  "main": "src/index.ts",
-  "module": "src/index.ts",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "files": [
     "dist"
   ],
@@ -52,7 +48,8 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.39.2"
+    "@finsweet/ts-utils": "^0.39.2",
+    "typeit": "^8.7.1"
   },
   "engines": {
     "pnpm": ">=8"
