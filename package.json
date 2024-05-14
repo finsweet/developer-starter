@@ -55,6 +55,6 @@
     "@finsweet/ts-utils": "^0.40.0"
   },
   "engines": {
-    "pnpm": ">=8"
+    "pnpm": ">=9"
   }
 }
