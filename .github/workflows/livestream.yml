@@ -1,0 +1,11 @@
+name: Livestream Action
+
+on:
+  pull_request:
+
+jobs:
+  Log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Console logs some cool s**t
+        run: echo "Hello, World!"
