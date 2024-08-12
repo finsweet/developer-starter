@@ -5,10 +5,7 @@
   "homepage": "https://github.com/finsweet/developer-starter#readme",
   "license": "ISC",
   "keywords": [],
-  "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
-  },
+  "author": "Finsweet (https://finsweet.com/)",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/finsweet/developer-starter.git"
@@ -52,9 +49,19 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.40.0"
+    "@finsweet/ts-utils": "^0.40.0",
+    "@fullcalendar/core": "^6.1.15",
+    "@fullcalendar/daygrid": "^6.1.15",
+    "@fullcalendar/list": "^6.1.15",
+    "@fullcalendar/timegrid": "^6.1.15"
   },
   "engines": {
     "pnpm": ">=9"
+  },
+  "bin": {
+    "developer-starter": "bin/build.js"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
