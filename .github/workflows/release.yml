@@ -8,6 +8,6 @@ on:
 
 jobs:
   release:
-    uses: finsweet/workflow-release/.github/workflows/release.yml@2
+    uses: finsweet/workflow-release/.github/workflows/release.yml@v2
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
