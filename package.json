@@ -42,7 +42,7 @@
     "@finsweet/tsconfig": "^1.4.2",
     "@playwright/test": "^1.50.1",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.24.2",
+    "esbuild": "^0.25.0",
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
